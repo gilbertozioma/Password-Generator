@@ -1,0 +1,169 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    height: 300px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #222;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+h3 {
+    padding-top: -45;
+    color: #999;
+}
+
+.password-box {
+    position: relative;
+    margin-top: 50px;
+    padding: auto;
+}
+
+.password-box input {
+    width: 100%;
+    max-width: 15rem;
+    height: 30px;
+    user-select: none;
+    pointer-events: none;
+    border: 2px solid #444;
+    background-color: #333;
+    color: #999;
+}
+
+i {
+    position: absolute;
+    left: 68%;
+    transform: translateX(50%);
+    top: 10px;
+    color: #999;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+i:active {
+    outline: 0;
+}
+
+i:hover {
+    opacity: 0.8;
+}
+
+.range-box input {
+    width: 100%;
+    max-width: 45%;
+    accent-color: #999;
+    cursor: pointer;
+}
+
+.slider-number {
+    position: absolute;
+    min-width: 25px;
+    align-self: center;
+    color: #999;
+    left: 59%;
+    transform: translateX(-50%);
+}
+
+.generate-button {
+    margin: 30px;
+    width: 10rem;
+    height: 30px;
+    background-color: #333;
+    outline: 2px solid #444;
+    color: #999;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.generate-button:active {
+    transform: scale(.9);
+}
+
+.alert-container {
+    position: fixed;
+    width: 220px;
+    max-width: 80%;
+    height: 50px;
+    background: #444;
+    color: #999;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: .5s;
+    visibility: hidden;
+}
+
+.alert-container:active {
+    margin-right: 0px;
+    visibility: visible;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        height: 50%;
+        width: 70%;
+        padding: 20px;
+    }
+    .main{
+        margin: 15px;
+    }
+
+    .password-box {
+        margin-top: 30px;
+    }
+
+    .password-box input {
+        max-width: none;
+    }
+
+    .range-box input {
+        margin-top: 20px;
+        max-width: 90%;
+    }
+    
+    .generate-button {
+        margin-top: 40px;
+        /* margin: 20px; */
+    }
+
+    i {
+        left: 88%;
+    }
+
+    .slider-number {
+        left: 82%;
+        bottom: 47.4%;
+    }
+
+    .alert-container {
+        width: 100%;
+        max-width: none;
+        bottom: 10px;
+        right: 10px;
+    }
+}
