@@ -1,7 +1,5 @@
 # Password-Generator
 
-#
-
 This is a random password generator I built to help generate a strong password, you can use the range to set the lenght of the password you want. You can click on the copy icon on the password input to copy the generated password.
 
 #
